@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(135deg,  rgb(69,72,77) 0%,rgb(0,0,0) 100%);
+  color: lightgrey;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+input[type="text"] {
+  border: none;
+  background: rgb(69,72,77,.2);
+  color: lightgrey;
+}
+
+input[type="text"]:focus {
+  background: rgb(69,72,77,.2);
+  color: lightgrey;
+}
+
+#operation {
+  border: none;
+  background: rgb(69,72,77,.2);
+  color: lightgrey;
+}
+
+#operation:focus {
+  background: rgb(69,72,77,.2);
+  color: lightgrey;
+}
+
+.body {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  color: lightgrey;
+}

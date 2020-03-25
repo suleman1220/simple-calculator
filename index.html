@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Simple Calculator</title>
+</head>
+
+<body>
+  <div class="body">
+    <h1 class="pb-4 font-weight-bold">Simple Calculator</h1>
+    <form>
+      <div class="form-group">
+        <label>Value 1:</label>
+        <input type="text" class="form-control" id="value1">
+      </div>
+      <div class="form-group">
+        <label>Value 2:</label>
+        <input type="text" class="form-control" id="value2">
+      </div>
+      <div class="form-group">
+        <label>Operation:</label>
+        <select class="form-control" id="operation">
+          <option value="Add" class="bg-dark text-light">Add</option>
+          <option value="Subtract" class="bg-dark text-light">Subtract</option>
+          <option value="Multiply" class="bg-dark text-light">Multiply</option>
+          <option value="Divide" class="bg-dark text-light">Divide</option>
+        </select>
+      </div>
+      <button type="button" class="btn btn-dark btn-block" onclick="calc();">Calculate</button>
+    </form>
+    <div class="text-center">
+      <small id="error" class="text-danger"></small>
+      <div class="pt-4"> <h2 id="result"></h2> </div>
+    </div>
+  </div>
+
+  <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>
